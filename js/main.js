@@ -12,7 +12,23 @@
 // ! PROCEDURA
 
 // # RACCOLTA DATI
+// * numeri da 1 a 100
+// * multipli di 3
+// * multipli di 5
+// * variabile output
 
 // # ELABORAZIONE
+// * stampo numeri da 1 a 100
+
+// * PER OGNI numero da 1 a 100
+// SE è multiplo di entrambi
+// sostituisci numero con "FizzBuzz"
+
+// ALTRIMENTI SE è multiplo di 3
+// sostituisci numero con "Fizz"
+
+// ALTRIMENTI SE è multiplo di 5
+// sostituisci numero con "Buzz"
 
 // # OUTPUT
+// * stampo la variabile output

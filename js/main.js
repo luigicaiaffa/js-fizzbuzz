@@ -18,7 +18,7 @@ const number = 100;
 const multi3 = 3;
 // * multipli di 5
 const multi5 = 5;
-
+// * preparo una variabile output message
 let outputMessage;
 
 // # ELABORAZIONE

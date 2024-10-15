@@ -13,22 +13,50 @@
 
 // # RACCOLTA DATI
 // * numeri da 1 a 100
+const number = 100;
 // * multipli di 3
+const multi3 = 3;
 // * multipli di 5
-// * variabile output
+const multi5 = 5;
+
+let outputMessage;
 
 // # ELABORAZIONE
-// * stampo numeri da 1 a 100
-
 // * PER OGNI numero da 1 a 100
-// SE è multiplo di entrambi
-// sostituisci numero con "FizzBuzz"
+for (let i = 1; i <= number; i += 1) {
+  // * controllo quali numeri sono multipli di 3
+  const isMulti3Valid = i % multi3 === 0;
 
-// ALTRIMENTI SE è multiplo di 3
-// sostituisci numero con "Fizz"
+  // * controllo quali numeri sono multipli di 5
+  const isMulti5Valid = i % multi5 === 0;
 
-// ALTRIMENTI SE è multiplo di 5
-// sostituisci numero con "Buzz"
+  // SE il numero è multiplo di entrambi
+  if (isMulti3Valid && isMulti5Valid) {
+    // sostituisci numero con "FizzBuzz"
+    outputMessage = "FizzBuzz";
+    console.log(outputMessage);
+  }
+
+  // SE è multiplo di 3
+  else if (isMulti3Valid && !isMulti5Valid) {
+    // sostituisci numero con "Fizz"
+    outputMessage = "Fizz";
+    console.log(outputMessage);
+  }
+
+  // SE è multiplo di 5
+  else if (isMulti5Valid && !isMulti3Valid) {
+    // sostituisci numero con "Buzz"
+    outputMessage = "Buzz";
+    console.log(outputMessage);
+  }
+
+  // ALTRIMENTI
+  else {
+    // il numero non viene sostituito
+    outputMessage = i;
+    console.log(outputMessage);
+  }
+}
 
 // # OUTPUT
-// * stampo la variabile output

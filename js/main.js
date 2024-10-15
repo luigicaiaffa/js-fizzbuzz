@@ -32,29 +32,33 @@ for (let i = 1; i <= number; i += 1) {
 
   // SE il numero è multiplo di entrambi
   if (isMulti3Valid && isMulti5Valid) {
-    // sostituisci numero con "FizzBuzz"
+    // sostituisci numeri con "FizzBuzz"
     outputMessage = "FizzBuzz";
+    // stampali
     console.log(outputMessage);
   }
 
   // SE è multiplo di 3
   else if (isMulti3Valid && !isMulti5Valid) {
-    // sostituisci numero con "Fizz"
+    // sostituisci numeri con "Fizz"
     outputMessage = "Fizz";
+    // stampali
     console.log(outputMessage);
   }
 
   // SE è multiplo di 5
   else if (isMulti5Valid && !isMulti3Valid) {
-    // sostituisci numero con "Buzz"
+    // sostituisci numeri con "Buzz"
     outputMessage = "Buzz";
+    // stampali
     console.log(outputMessage);
   }
 
   // ALTRIMENTI
   else {
-    // il numero non viene sostituito
+    // i numeri non vengono sostituiti
     outputMessage = i;
+    // stampali
     console.log(outputMessage);
   }
 }

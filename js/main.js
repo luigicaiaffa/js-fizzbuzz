@@ -39,7 +39,7 @@ for (let i = 1; i <= number; i += 1) {
   }
 
   // SE è multiplo di 3
-  else if (isMulti3Valid && !isMulti5Valid) {
+  else if (isMulti3Valid) {
     // sostituisci numeri con "Fizz"
     outputMessage = "Fizz";
     // stampali
@@ -47,7 +47,7 @@ for (let i = 1; i <= number; i += 1) {
   }
 
   // SE è multiplo di 5
-  else if (isMulti5Valid && !isMulti3Valid) {
+  else if (isMulti5Valid) {
     // sostituisci numeri con "Buzz"
     outputMessage = "Buzz";
     // stampali
